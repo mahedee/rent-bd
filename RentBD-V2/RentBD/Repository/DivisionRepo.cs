@@ -57,5 +57,46 @@ namespace RentBD.Repository
             else
                 return msg;
         }
+
+
+        public List<Division> GetDivisionInfoAll()
+        {
+            DataTable tblDivisionInfo = new DataTable();
+            SqlDataReader rdr = null;
+
+            cmd.CommandType = CommandType.Text;
+
+            cmd.CommandText = "SELECT Id, Name FROM Division";
+
+            try
+            {
+                if (sqlConn.State == ConnectionState.Closed)
+                    sqlConn.Open();
+
+                rdr = cmd.ExecuteReader();
+                tblDivisionInfo.Load(rdr);
+            }
+            catch (Exception exp)
+            {
+                throw (exp);
+            }
+            finally
+            {
+                if (sqlConn.State == ConnectionState.Open)
+                    sqlConn.Close();
+            }
+
+            //return tblDivisionInfo;
+
+
+            //Convert Data Table to List
+
+            List<Division> divisionList = new List<Division>();
+            divisionList = Utility.ConvertDataTable<Division>(tblDivisionInfo);
+            //ConvertDataTable<Student>(dt);
+
+            return divisionList;
+        }
+
     }
 }

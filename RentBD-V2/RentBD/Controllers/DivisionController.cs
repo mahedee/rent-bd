@@ -13,7 +13,10 @@ namespace RentBD.Controllers
         // GET: Division
         public ActionResult Index()
         {
-            return View();
+            DivisionRepo divisionRepo = new DivisionRepo();
+            List<Division> divisionList = new List<Division>();
+            divisionList = divisionRepo.GetDivisionInfoAll();
+            return View(divisionList);
         }
 
         // GET: Division/Details/5
