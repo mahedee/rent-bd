@@ -201,6 +201,7 @@
     <Compile Include="Controllers\DivisionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TestAccountController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -223,6 +224,78 @@
     </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\theme\404.html" />
+    <Content Include="Content\theme\about-us.html" />
+    <Content Include="Content\theme\blog-details-full-width.html" />
+    <Content Include="Content\theme\blog-details.html" />
+    <Content Include="Content\theme\blog-grid-full-width.html" />
+    <Content Include="Content\theme\blog-grid.html" />
+    <Content Include="Content\theme\blog.html" />
+    <Content Include="Content\theme\candidates-details.html" />
+    <Content Include="Content\theme\candidates-listing.html" />
+    <Content Include="Content\theme\contact-us.html" />
+    <Content Include="Content\theme\css\bootstrap.min.css" />
+    <Content Include="Content\theme\css\font-awesome.css" />
+    <Content Include="Content\theme\css\owl.carousel.css" />
+    <Content Include="Content\theme\css\owl.video.play.html" />
+    <Content Include="Content\theme\css\style.css" />
+    <Content Include="Content\theme\faqs.html" />
+    <Content Include="Content\theme\favicon.ico" />
+    <Content Include="Content\theme\fonts\fontawesome-webfont3e6e.html" />
+    <Content Include="Content\theme\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="Content\theme\fonts\glyphicons-halflings-regular.html" />
+    <Content Include="Content\theme\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\theme\images\about.jpg" />
+    <Content Include="Content\theme\images\about2.jpg" />
+    <Content Include="Content\theme\images\about3.jpg" />
+    <Content Include="Content\theme\images\ad.jpg" />
+    <Content Include="Content\theme\images\andriod.png" />
+    <Content Include="Content\theme\images\app-bg.jpg" />
+    <Content Include="Content\theme\images\app-mobile.png" />
+    <Content Include="Content\theme\images\apple.png" />
+    <Content Include="Content\theme\images\banner.jpg" />
+    <Content Include="Content\theme\images\banner2.jpg" />
+    <Content Include="Content\theme\images\blog\1.jpg" />
+    <Content Include="Content\theme\images\blog\2.jpg" />
+    <Content Include="Content\theme\images\blog\3.jpg" />
+    <Content Include="Content\theme\images\blog\4.jpg" />
+    <Content Include="Content\theme\images\blog\large-1.jpg" />
+    <Content Include="Content\theme\images\client.jpg" />
+    <Content Include="Content\theme\images\client2.jpg" />
+    <Content Include="Content\theme\images\dummy.png" />
+    <Content Include="Content\theme\images\faq.jpg" />
+    <Content Include="Content\theme\images\feature01.png" />
+    <Content Include="Content\theme\images\feature02.png" />
+    <Content Include="Content\theme\images\feature03.png" />
+    <Content Include="Content\theme\images\feature04.png" />
+    <Content Include="Content\theme\images\footer-logo.png" />
+    <Content Include="Content\theme\images\inner-heading-bg.jpg" />
+    <Content Include="Content\theme\images\jobdetail.jpg" />
+    <Content Include="Content\theme\images\logo.png" />
+    <Content Include="Content\theme\images\new pattern.png" />
+    <Content Include="Content\theme\images\resume01.jpg" />
+    <Content Include="Content\theme\images\resume02.jpg" />
+    <Content Include="Content\theme\images\resume03.jpg" />
+    <Content Include="Content\theme\images\resume04.jpg" />
+    <Content Include="Content\theme\images\slider-bg.jpg" />
+    <Content Include="Content\theme\images\testimonials-bg.jpg" />
+    <Content Include="Content\theme\index-2.html" />
+    <Content Include="Content\theme\index.html" />
+    <Content Include="Content\theme\index2.html" />
+    <Content Include="Content\theme\job-details.html" />
+    <Content Include="Content\theme\job-listing.html" />
+    <Content Include="Content\theme\js\bootstrap.min.js" />
+    <Content Include="Content\theme\js\jquery-2.1.4.min.js" />
+    <Content Include="Content\theme\js\owl.carousel.js" />
+    <Content Include="Content\theme\js\script.js" />
+    <Content Include="Content\theme\login.html" />
+    <Content Include="Content\theme\post-job.html" />
+    <Content Include="Content\theme\pricing.html" />
+    <Content Include="Content\theme\register.html" />
+    <Content Include="Content\theme\rs-plugin\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="Content\theme\rs-plugin\js\jquery.themepunch.tools.min.js" />
+    <Content Include="Content\theme\testimonials.html" />
+    <Content Include="Content\theme\typoghrapy.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -234,6 +307,14 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\theme\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="Content\theme\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="Content\theme\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="Content\theme\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Content\theme\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\theme\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\theme\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\theme\fonts\glyphicons-halflings-regulard41d.eot" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -287,6 +368,8 @@
     <Content Include="Views\District\Index.cshtml" />
     <Content Include="Views\District\Edit.cshtml" />
     <Content Include="Views\District\Delete.cshtml" />
+    <Content Include="Views\Shared\_Layout - Copy.cshtml" />
+    <Content Include="Views\TestAccount\Register.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
