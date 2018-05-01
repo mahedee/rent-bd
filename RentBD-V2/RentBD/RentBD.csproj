@@ -286,6 +286,7 @@
     <Content Include="Views\District\Create.cshtml" />
     <Content Include="Views\District\Index.cshtml" />
     <Content Include="Views\District\Edit.cshtml" />
+    <Content Include="Views\District\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
