@@ -142,7 +142,42 @@ namespace RentBD.Repository
         }
 
 
+        public string deleteDistrict(int id) {
 
+            string msg = string.Empty;
+
+            int number = 0;
+            try {
+                if (sqlconn.State == ConnectionState.Closed) {
+                    sqlconn.Open();
+                    cmd.CommandType = CommandType.Text;
+
+                    cmd.CommandText = "Delete from district " + "where Id = " + id;
+                    number = cmd.ExecuteNonQuery();
+                    cmd.Parameters.Clear();
+
+                }
+
+            }
+            catch (Exception exp) {
+
+                throw (exp);
+
+            }
+
+            finally
+            {
+                if (sqlconn.State == ConnectionState.Open)
+                    sqlconn.Close();
+            }
+
+            if (number > 0)
+                return "Delete information updated successfully!";
+            else
+                return msg;
+        }
+
+    }
 
 
 
@@ -151,7 +186,7 @@ namespace RentBD.Repository
 
 
 
-}
+
 
 
 

@@ -45,8 +45,6 @@ namespace RentBD.Controllers
 
 
 
-
-
                 // TODO: Add insert logic here
 
                 return RedirectToAction("Index");
@@ -92,10 +90,12 @@ namespace RentBD.Controllers
 
         // POST: District/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(int id, District district)
         {
             try
             {
+                DistrictRepo districtRepo = new DistrictRepo();
+              string  msg =districtRepo.deleteDistrict(id);
                 // TODO: Add delete logic here
 
                 return RedirectToAction("Index");
